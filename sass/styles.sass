@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400')
+
+$fontColorBright: #a29061
+$fontColorGrey: #4d565d
+$fontColorGraphite: #455560
+$fontColorFooter: #ffffff
+
+$backgroundWelocomColor: rgba(84, 97, 107, 0.439)
+
+.background-img-settings
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+body
+    font-family: 'Open Sans', sans-serif
+    margin: 0
+
+main
+    overflow-x: hidden
+
+.container
+    width: 1200px
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+    @media (max-width: 1199px)
+        width: 800px
+    @media (max-width: 992px)
+        width: 650px
+    @media (max-width: 720px)
+        width: 100%
+        
+
+.read-more-btn
+    position: absolute
+    background-color: $fontColorBright
+    border-radius: 50% 
+    height: 219px
+    width: 219px
+    text-transform: uppercase 
+    a           
+        display: block
+        padding-top: 70px   
+        padding-left: 35px   
+        height: 72px
+        width: 153px
+        font-size: 33px
+        font-weight: 300
+        text-decoration: none
+        color: #ffffff
+        text-align: center
+        &:hover
+            color: $fontColorGraphite
+
+.next-prev-btn
+    background-color: $fontColorBright
+    border: 0
+    position: absolute    
+    top: 450px
+    height: 120px
+    width: 100px
+    font-size: 50px
+    color: #ffffff
+    cursor: pointer
+    @media (max-width: 1199px)
+        height: 150px
+        width: 130px
+    
+.header-btn
+    border: 0 
+    background: 0
+
+// nawigacja
+
+header
+    height: 130vh
+    position: relative
+    overflow: hidden
+    @media (max-width: 1199px)
+        height: 100vh
+    @media (max-width: 992px)
+        height: 130vh
+    div
+        img       
+            position: absolute
+            &:nth-child(1)
+                top: 235px
+                right: 780px
+                z-index: 20
+                @media (max-width: 1199px)
+                    top: 95px
+                    right: 20px
+                @media (max-width: 992px)
+                    top: 500px
+            &:nth-child(2)
+                top: 300px
+                right: 50px
+                z-index: 19
+                @media (max-width: 1199px)
+                    display: none
+            &:nth-child(3)
+                top: 800px
+                left: 460px
+                z-index: 18
+                @media (max-width: 1199px)
+                    top: 930px
+                    left: 530px 
+                @media (max-width: 992px)
+                    display: none             
+            &:nth-child(4)
+                top: 360px
+                right: 120px
+                z-index: 16
+                @media (max-width: 1199px)
+                    top: 340px
+                    right: 30px
+                    z-index: -5
+                @media (max-width: 992px)
+                    right: 0
+                    top: 400px                    
+            &:nth-child(5)
+                top: 880px
+                left: 0
+                z-index: -14
+                @media (max-width: 1199px)
+                    top: 950px
+                // @media (max-width: 992px)
+                //     top: 800px   
+
+nav
+    img        
+        position: relative
+        top: 30px
+        left: 100px
+        @media (max-width: 1199px)
+            top: 10px
+            left: 10px
+            width: 100px
+            height: 100px
+        @media (max-width: 992px)
+            top: 60px
+            left: 600px
+
+.navbar
+    float: right
+    @media (max-width: 992px)
+        float: none
+        position: absolute
+        top: 15px
+    li
+        display: inline-block       
+        padding-left: 20px
+        @media (max-width: 1199px)
+            padding-left: 0
+        @media (max-width: 992px)
+            padding-left: 10px
+        a 
+            cursor: pointer
+            text-decoration: none
+            color: $fontColorBright
+            font-size: 18px 
+            text-transform: uppercase
+        &:hover
+            a
+                color: $fontColorGraphite
+            .line
+                border-left: .5px solid $fontColorGraphite
+    
+
+.line
+    border-left: .5px solid #ceb985
+    height: 80px    
+    display: block
+    margin-left: 1px
+    @media (max-width: 1199px)
+        height: 50px 
+    @media (max-width: 992px)
+        display: none  
+
+.nav-form 
+    input
+        background-color: $fontColorBright 
+        border: 0 
+    @media (max-width: 992px)
+        padding-top: 15px         
+      
+
+.header-content
+    position: relative
+    top: 200px
+    left: 100px    
+    h2
+        font-size: 80px
+        font-weight: 300
+        color: $fontColorGraphite
+        max-width: 650px
+        text-transform: uppercase
+    h3
+        font-size: 60px
+        font-weight: 300
+        color: $fontColorBright
+        max-width: 600px
+        text-transform: uppercase
+    @media (max-width: 1199px)
+        top: 50px
+        left: 80px
+
+// main
+
+.welcom
+    background: url('assets/04.jpg') no-repeat center center
+    @extend .background-img-settings
+    position: relative    
+    .background-welcom 
+        padding-bottom: 160px        
+        background: url('assets/layer-7.png') no-repeat center center
+        @extend .background-img-settings
+        position: relative                   
+        h1 
+            margin: 0
+            color: $fontColorFooter 
+            font-size: 60px
+            font-weight: 300            
+            padding-top: 150px
+            text-transform: uppercase
+            &::first-letter 
+                font-size: 80px
+            @media (max-width: 720px)
+                font-size: 40px
+                &::first-letter 
+                    font-size: 60px
+        h2
+            color: $fontColorBright
+            font-size: 40px
+            font-weight: 300
+            padding-top: 27px
+            margin: 0
+            text-transform: uppercase
+            @media (max-width: 720px)
+                font-size: 30px
+        p
+            color: $fontColorFooter
+            font-size: 16px
+            padding-top: 50px
+            width: 685px
+            line-height: 20px
+            @media (max-width: 720px)
+                width: 95%
+                padding-top: 35px
+                                    
+        .last-paragraph
+            width: 450px
+            @media (max-width: 720px)
+                width: 95%
+        .btn-welcom
+            @extend .read-more-btn
+            padding: 0
+            bottom: 25px
+            left: 780px
+            z-index: 555
+            @media (max-width: 992px)
+                left: 510px
+
+.news
+    background: url('assets/mobilift-header.jpg') 0/cover 
+    @extend .background-img-settings
+    position: relative 
+    border-top: 1px solid     
+    top: -100px
+    border-radius: 80% 80% 0 0 /45px 
+    width: 100%   
+    margin: 0
+    h2
+        float: right
+        padding-top: 125px
+        padding-right: 455px
+        font-size: 60px
+        font-weight: 300
+        color: $fontColorGrey
+        @media (max-width: 992px)
+            padding-right: 300px
+    @media (max-width: 1199px)
+        border-radius: 0 
+        top: -105px
+
+.news-content
+    display: inline-block
+    padding-bottom: 200px
+    img      
+        padding-top: 66px
+        @media (max-width: 1199px)
+            padding-left: 50px
+    .content 
+        float: right
+        padding-left: 35px 
+        padding-top: 66px      
+        h4
+            color: $fontColorBright
+        h3
+            max-width: 734px
+            font-size: 40px
+            font-weight: 300
+            color: $fontColorGrey
+            padding-top: 41px
+        p
+            font-size: 16px
+            padding-top: 45px
+            max-width: 734px
+            font-weight: 400
+            line-height: 30px
+        .read-more-btn
+            bottom: -32px
+            right: 181px
+            z-index: 500
+
+.prev
+    @extend .next-prev-btn
+    left: -50px
+    border-radius: 0 50% 50% 0
+    padding-left: 40px
+
+.next
+    @extend .next-prev-btn
+    right: -50px
+    border-radius: 50% 0 0 50%
+    padding-right: 40px
+    
+
+footer  
+    background-color: #455560
+    color:  $fontColorFooter
+    margin-top: -100px
+    @media (max-width: 1199px)
+        margin-top: -110px
+        
+.footer-container
+    display: flex
+    justify-content: space-between
+    padding-top: 93px
+    padding-bottom: 93px    
+    .footer-info
+        flex: 50%
+        display: flex
+        justify-content: space-between
+
+.footer-flex
+    flex: 30%    
+    ul        
+        li 
+            padding-top: 20px            
+            a 
+                text-decoration: none 
+                color:  $fontColorFooter
+                font-weight: 300 
+                font-size: 14px
+                text-transform: uppercase
+                        
+
+.footer-form
+    padding-top: 30px
+    flex: 50%
+    display: flex
+    @media (max-width: 1199px)
+        flex-direction: column
+        padding-top: 20px
+    p
+        font-size: 24px 
+        padding-right: 32px   
+        padding-top: 22px   
+        text-transform: uppercase
+        font-weight: 300
+        @media (max-width: 1199px)
+            padding-top: 0
+            padding-bottom: 10px
+    .footer-input
+        border: 2px solid #2d3439
+        background-color: inherit
+        height: 59px
+        font-size: 24px
+        color: $fontColorFooter
+        box-sizing: border-box
+        &:focus
+            border-color: $fontColorFooter
+            box-shadow: 0
+        @media (max-width: 1199px)
+            width: 80%
+
+    button
+        height: 65px
+        background-color: #2d3439
+        width: 244px
+        border: 0
+        text-transform: uppercase
+        font-size: 24px
+        color: $fontColorFooter
+        padding: 0
+        &:focus
+            border-color: $fontColorFooter
+        @media (max-width: 1199px)
+            width: 80%
+            height: 55px
+
+.copyright
+    background-color: #2d3439
+    img    
+        padding-top: 32px
+        padding-bottom: 32px
+        padding-right: 12px
+        float: left
+    p
+        padding-top: 42px
+        padding-bottom: 42px
+        display: inline-block
+        font-size: 12px
+        &:last-child
+            float: right
+        
+            
